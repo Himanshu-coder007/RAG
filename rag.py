@@ -24,7 +24,7 @@ if not GEMINI_KEY:
 
 
 # Handle Ctrl+C gracefully
-def signal_handler(sig, frame):
+def signal_handler():
     print("\nYou pressed Ctrl+C! Exiting gracefully.")
     sys.exit(0)
 
@@ -43,7 +43,7 @@ Rules:
 - Answer using information from the reference context.
 - Do not make up or hallucinate information.
 - If the answer cannot be found in the context, say:
-  "I couldn't find that information in the offer letter."
+  "I couldn't find that information in the pdf."
 - Give a clear and complete answer.
 - Include relevant numbers, dates, percentages, or conditions when available.
 - Keep the answer easy to understand.
