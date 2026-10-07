@@ -24,7 +24,7 @@ if not GEMINI_KEY:
 
 
 # Handle Ctrl+C gracefully
-def signal_handler():
+def signal_handler(sig, frame):
     print("\nYou pressed Ctrl+C! Exiting gracefully.")
     sys.exit(0)
 
